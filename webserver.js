@@ -1,5 +1,5 @@
-var http = require('http').createServer(handler); //require http server, and create server with function handler()
-var express = require('express');
+var http = require('http'); //require http server, and create server with function handler()
+var express = require('express').createServer(handler);
 var app = express();
 var fs = require('fs'); //require filesystem module
 var io = require('socket.io')(http) //require socket.io module and pass the http object (server)
