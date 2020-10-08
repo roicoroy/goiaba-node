@@ -11,25 +11,8 @@
 </style>
 
 <body>
-  <h1>INDEX</h1>
-  <p id='message'></p>
-  <p id='led'></p>
-
-  <script>
-    $(document).ready(function () {
-      setInterval(getMessage, 1000);
-    });
-
-    //Chapter 4 - Node.JS Server
-    function getMessage() {
-      $.get('http://192.168.1.71:5000/goiaba/message', function (data) {
-        $('#message').text(data);
-      });
-      $.get('http://192.168.1.71:5000/goiaba/led/', function (data) {
-        $('#led').text(data);
-      });
-    }
-  </script>
+    <h1>HELLO WORLD!</h1>
+ 
 </body>
 
 </html>
